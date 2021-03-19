@@ -1,4 +1,4 @@
-module github.com/hslam/netpoll
+module github.com/Swaggadan/netpoll
 
 go 1.15
 
