@@ -103,7 +103,7 @@ type DataHandler struct {
 	BufferSize int
 	upgrade    func(net.Conn) (net.Conn, error)
 	// HandlerFunc is the data Serve function.
-	HandlerFunc func(net.Conn, req []byte) (res []byte)
+	HandlerFunc func(conn net.Conn, req []byte) (res []byte)
 }
 
 type context struct {
