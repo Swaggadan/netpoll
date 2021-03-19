@@ -178,7 +178,7 @@ func (h *DataHandler) Serve(ctx Context) error {
 		req = make([]byte, n)
 		copy(req, buf[:n])
 	}
-	res := h.HandlerFunc(req)
+	res := h.HandlerFunc(c.conn, req)
 	if c.upgrade {
 		c.writing.Lock()
 	}
